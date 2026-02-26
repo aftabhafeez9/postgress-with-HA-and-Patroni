@@ -1,0 +1,10 @@
+2026-02-26 20:53:33.746 PKT [20492] LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+2026-02-26 20:53:33.748 PKT [20492] LOG:  could not bind IPv6 address "::": Only one usage of each socket address (protocol/network address/port) is normally permitted.
+	
+2026-02-26 20:53:33.748 PKT [20492] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-02-26 20:53:33.748 PKT [20492] LOG:  could not bind IPv4 address "0.0.0.0": Only one usage of each socket address (protocol/network address/port) is normally permitted.
+	
+2026-02-26 20:53:33.748 PKT [20492] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-02-26 20:53:33.749 PKT [20492] WARNING:  could not create listen socket for "*"
+2026-02-26 20:53:33.749 PKT [20492] FATAL:  could not create any TCP/IP sockets
+2026-02-26 20:53:33.752 PKT [20492] LOG:  database system is shut down

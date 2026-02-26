@@ -1,0 +1,44 @@
+2026-02-26 16:08:22.026 GMT [8216] LOG:  syntax error in file "D:/HEC-app/postgree-backup-container-app/node2/postgresql.conf" line 896, near token "="
+2026-02-26 16:08:22.026 GMT [8216] FATAL:  configuration file "D:/HEC-app/postgree-backup-container-app/node2/postgresql.conf" contains errors
+2026-02-26 21:10:37.769 PKT [11580] LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+2026-02-26 21:10:37.771 PKT [11580] LOG:  listening on IPv6 address "::", port 5434
+2026-02-26 21:10:37.771 PKT [11580] LOG:  listening on IPv4 address "0.0.0.0", port 5434
+2026-02-26 21:10:37.845 PKT [1668] LOG:  database system was interrupted; last known up at 2026-02-26 20:56:32 PKT
+2026-02-26 21:10:38.000 PKT [1668] LOG:  starting backup recovery with redo LSN 0/3000028, checkpoint LSN 0/3000080, on timeline ID 1
+2026-02-26 21:10:38.000 PKT [1668] LOG:  entering standby mode
+2026-02-26 21:10:38.005 PKT [1668] LOG:  redo starts at 0/3000028
+2026-02-26 21:10:38.017 PKT [1668] LOG:  completed backup recovery with redo LSN 0/3000028 and end LSN 0/3000158
+2026-02-26 21:10:38.017 PKT [1668] LOG:  consistent recovery state reached at 0/3000158
+2026-02-26 21:10:38.017 PKT [11580] LOG:  database system is ready to accept read-only connections
+2026-02-26 21:10:38.097 PKT [7076] LOG:  started streaming WAL from primary at 0/4000000 on timeline 1
+2026-02-26 21:13:11.474 PKT [11580] LOG:  received fast shutdown request
+2026-02-26 21:13:11.487 PKT [11580] LOG:  aborting any active transactions
+2026-02-26 21:13:11.487 PKT [7076] FATAL:  terminating walreceiver process due to administrator command
+2026-02-26 21:13:11.988 PKT [18172] LOG:  shutting down
+2026-02-26 21:13:11.988 PKT [18172] LOG:  restartpoint starting: shutdown immediate
+2026-02-26 21:13:12.433 PKT [18172] LOG:  restartpoint complete: wrote 1037 buffers (6.3%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.092 s, sync=0.331 s, total=0.446 s; sync files=311, longest=0.012 s, average=0.002 s; distance=33101 kB, estimate=33101 kB; lsn=0/50535B8, redo lsn=0/5053528
+2026-02-26 21:13:12.433 PKT [18172] LOG:  recovery restart point at 0/5053528
+2026-02-26 21:13:12.433 PKT [18172] DETAIL:  Last completed transaction was at log time 2026-02-26 21:12:12.262003+05.
+2026-02-26 21:13:12.976 PKT [11580] LOG:  database system is shut down
+2026-02-26 21:20:24.184 PKT [16956] LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+2026-02-26 21:20:24.186 PKT [16956] LOG:  listening on IPv6 address "::", port 5434
+2026-02-26 21:20:24.186 PKT [16956] LOG:  listening on IPv4 address "0.0.0.0", port 5434
+2026-02-26 21:20:24.261 PKT [21096] LOG:  database system was shut down in recovery at 2026-02-26 21:13:12 PKT
+2026-02-26 21:20:24.274 PKT [21096] LOG:  entering standby mode
+2026-02-26 21:20:24.278 PKT [21096] LOG:  redo starts at 0/5053528
+2026-02-26 21:20:24.410 PKT [21096] LOG:  consistent recovery state reached at 0/54E3848
+2026-02-26 21:20:24.411 PKT [16956] LOG:  database system is ready to accept read-only connections
+2026-02-26 21:20:24.411 PKT [21096] LOG:  invalid record length at 0/54E3880: expected at least 24, got 0
+2026-02-26 21:20:24.501 PKT [20376] LOG:  started streaming WAL from primary at 0/5000000 on timeline 1
+2026-02-26 21:25:24.265 PKT [2960] LOG:  restartpoint starting: time
+2026-02-26 21:27:11.763 PKT [2960] LOG:  restartpoint complete: wrote 994 buffers (6.1%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=107.125 s, sync=0.352 s, total=107.499 s; sync files=302, longest=0.014 s, average=0.002 s; distance=4673 kB, estimate=4673 kB; lsn=0/54E3988, redo lsn=0/54E3930
+2026-02-26 21:27:11.763 PKT [2960] LOG:  recovery restart point at 0/54E3930
+2026-02-26 21:27:11.763 PKT [2960] DETAIL:  Last completed transaction was at log time 2026-02-26 21:12:12.262003+05.
+2026-02-26 21:32:47.379 PKT [20376] FATAL:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2026-02-26 21:32:47.387 PKT [21096] LOG:  invalid record length at 0/54E3A38: expected at least 24, got 0
+2026-02-26 21:32:47.435 PKT [16956] LOG:  startup process (PID 21096) was terminated by exception 0xC000013A
+2026-02-26 21:32:47.435 PKT [16956] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-02-26 21:32:47.435 PKT [16956] LOG:  terminating any other active server processes
+^C

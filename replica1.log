@@ -1,0 +1,48 @@
+2026-02-26 16:04:52.413 GMT [13416] LOG:  syntax error in file "D:/HEC-app/postgree-backup-container-app/node1/postgresql.conf" line 896, near token "="
+2026-02-26 16:04:52.414 GMT [13416] FATAL:  configuration file "D:/HEC-app/postgree-backup-container-app/node1/postgresql.conf" contains errors
+2026-02-26 16:07:42.892 GMT [9360] LOG:  syntax error in file "D:/HEC-app/postgree-backup-container-app/node2/postgresql.conf" line 896, near token "="
+2026-02-26 16:07:42.892 GMT [9360] FATAL:  configuration file "D:/HEC-app/postgree-backup-container-app/node2/postgresql.conf" contains errors
+2026-02-26 21:10:14.357 PKT [9648] LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+2026-02-26 21:10:14.359 PKT [9648] LOG:  listening on IPv6 address "::", port 5433
+2026-02-26 21:10:14.359 PKT [9648] LOG:  listening on IPv4 address "0.0.0.0", port 5433
+2026-02-26 21:10:14.433 PKT [9212] LOG:  database system was interrupted; last known up at 2026-02-26 20:56:18 PKT
+2026-02-26 21:10:14.588 PKT [9212] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/20000B8, on timeline ID 1
+2026-02-26 21:10:14.588 PKT [9212] LOG:  entering standby mode
+2026-02-26 21:10:14.593 PKT [9212] LOG:  redo starts at 0/2000028
+2026-02-26 21:10:14.605 PKT [9212] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000158
+2026-02-26 21:10:14.605 PKT [9212] LOG:  consistent recovery state reached at 0/2000158
+2026-02-26 21:10:14.606 PKT [9648] LOG:  database system is ready to accept read-only connections
+2026-02-26 21:10:14.754 PKT [3540] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
+2026-02-26 21:13:06.503 PKT [9648] LOG:  received fast shutdown request
+2026-02-26 21:13:06.515 PKT [9648] LOG:  aborting any active transactions
+2026-02-26 21:13:06.516 PKT [3540] FATAL:  terminating walreceiver process due to administrator command
+2026-02-26 21:13:06.998 PKT [2828] LOG:  shutting down
+2026-02-26 21:13:06.998 PKT [2828] LOG:  restartpoint starting: shutdown immediate
+2026-02-26 21:13:07.511 PKT [2828] LOG:  restartpoint complete: wrote 1037 buffers (6.3%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.078 s, sync=0.415 s, total=0.514 s; sync files=311, longest=0.012 s, average=0.002 s; distance=49485 kB, estimate=49485 kB; lsn=0/50535B8, redo lsn=0/5053528
+2026-02-26 21:13:07.511 PKT [2828] LOG:  recovery restart point at 0/5053528
+2026-02-26 21:13:07.511 PKT [2828] DETAIL:  Last completed transaction was at log time 2026-02-26 21:12:12.262003+05.
+2026-02-26 21:13:08.387 PKT [9648] LOG:  database system is shut down
+2026-02-26 21:19:07.431 PKT [480] LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+2026-02-26 21:19:07.433 PKT [480] LOG:  listening on IPv6 address "::", port 5433
+2026-02-26 21:19:07.433 PKT [480] LOG:  listening on IPv4 address "0.0.0.0", port 5433
+2026-02-26 21:19:07.510 PKT [20640] LOG:  database system was shut down in recovery at 2026-02-26 21:13:07 PKT
+2026-02-26 21:19:07.523 PKT [20640] LOG:  entering standby mode
+2026-02-26 21:19:07.527 PKT [20640] LOG:  redo starts at 0/5053528
+2026-02-26 21:19:07.653 PKT [20640] LOG:  consistent recovery state reached at 0/54E3848
+2026-02-26 21:19:07.653 PKT [20640] LOG:  invalid record length at 0/54E3880: expected at least 24, got 0
+2026-02-26 21:19:07.653 PKT [480] LOG:  database system is ready to accept read-only connections
+2026-02-26 21:19:07.747 PKT [3776] LOG:  started streaming WAL from primary at 0/5000000 on timeline 1
+2026-02-26 21:24:07.502 PKT [10460] LOG:  restartpoint starting: time
+2026-02-26 21:25:53.912 PKT [10460] LOG:  restartpoint complete: wrote 994 buffers (6.1%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=106.157 s, sync=0.231 s, total=106.411 s; sync files=302, longest=0.015 s, average=0.001 s; distance=4673 kB, estimate=4673 kB; lsn=0/54E3988, redo lsn=0/54E3930
+2026-02-26 21:25:53.912 PKT [10460] LOG:  recovery restart point at 0/54E3930
+2026-02-26 21:25:53.912 PKT [10460] DETAIL:  Last completed transaction was at log time 2026-02-26 21:12:12.262003+05.
+2026-02-26 21:32:47.382 PKT [3776] FATAL:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2026-02-26 21:32:47.387 PKT [20640] LOG:  invalid record length at 0/54E3A38: expected at least 24, got 0
+2026-02-26 21:32:47.484 PKT [480] LOG:  startup process (PID 20640) was terminated by exception 0xC000013A
+2026-02-26 21:32:47.484 PKT [480] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-02-26 21:32:47.484 PKT [480] LOG:  terminating any other active server processes
+2026-02-26 21:32:47.484 PKT [16240] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "127.0.0.1", port 5432 failed: FATAL:  the database system is in recovery mode
+2026-02-26 21:32:47.492 PKT [480] LOG:  shutting down due to startup process failure
+^C
