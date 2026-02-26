@@ -1,8 +1,8 @@
 Clone this repo and run the following command
-docker-compose up
+#docker-compose up
 
 After all the containers are up, run the following command to check the status of nodes
-docker exec -it node1 patronictl -c /etc/patroni.yml list
+#docker exec -it node1 patronictl -c /etc/patroni.yml list
 + Cluster: postgres-cluster (7611221409206767638) ------+-----+------------+-----+
 | Member | Host  | Role    | State   | TL | Receive LSN | Lag | Replay LSN | Lag |
 +--------+-------+---------+---------+----+-------------+-----+------------+-----+
@@ -15,10 +15,10 @@ All nodes are running and node1 is the leader and other two are replica of node1
 
 
 stop node1
-docker stop node1
+#docker stop node1
 
 now check the status again
-docker exec -it node1 patronictl -c /etc/patroni.yml list
+#docker exec -it node1 patronictl -c /etc/patroni.yml list
 + Cluster: postgres-cluster (7611221409206767638) --------+-----+------------+-----+
 | Member | Host  | Role    | State     | TL | Receive LSN | Lag | Replay LSN | Lag |
 +--------+-------+---------+-----------+----+-------------+-----+------------+-----+
@@ -28,10 +28,10 @@ docker exec -it node1 patronictl -c /etc/patroni.yml list
 node is not running and node2 is automatically becomes the leader by patorni 
 
 now start node1 again
-docker start node1
+#docker start node1
 
 now check the atatis of all nodes
-docker exec -it node2 patronictl -c /etc/patroni.yml list
+#docker exec -it node2 patronictl -c /etc/patroni.yml list
 + Cluster: postgres-cluster (7611221409206767638) --------+-----+------------+-----+
 | Member | Host  | Role    | State     | TL | Receive LSN | Lag | Replay LSN | Lag |
 +--------+-------+---------+-----------+----+-------------+-----+------------+-----+
